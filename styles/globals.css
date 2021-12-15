@@ -18,3 +18,50 @@ a {
 .main {
   height: 80vh;
 }
+
+.main-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 999;
+}
+
+.main-right img {
+  height: 150px;
+}
+
+.main-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.main-left .line {
+  margin: 1rem 0;
+  display: block;
+  border: 1px solid #3a3a3a;
+  width: 4rem;
+  background: #3a3a3a;
+  position: relative;
+  left: -1rem;
+}
+
+.main-left img {
+  width: 40%;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 1rem;
+  z-index: 999;
+}
+
+.main-left .image-absolute {
+  position: absolute;
+  top: 6rem;
+  width: 80%;
+  height: 400px;
+  left: -9rem;
+  opacity: .4;
+  border-radius: 1rem;
+  z-index: 1;
+}

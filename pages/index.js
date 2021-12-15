@@ -18,8 +18,11 @@ export default function Home() {
     >
       <Grid className="main" container>
         <Grid
+          className="main-right"
           item
-          sx={{ width: '50%', height: '100%' }}
+          sx={{ height: '100%' }}
+          md={6}
+          xs={12}
         >
           <Box></Box>
           <Typography
@@ -29,8 +32,8 @@ export default function Home() {
             Ваш поиск моды начинается здесь
           </Typography>
 
-          <Grid container spacing={2}>
-            <Grid item xs={4}>
+          <Grid sx={{ margin: '2rem 0' }} justifyContent='space-between' container>
+            <Grid item xs={3}>
               <Card>
                 <NextLink href={`/product/1`} passHref>
                   <CardActionArea>
@@ -50,7 +53,7 @@ export default function Home() {
               </Card>
             </Grid>
 
-            <Grid item xs={4}>
+            <Grid item xs={3}>
               <Card>
                 <NextLink href={`/product/1`} passHref>
                   <CardActionArea>
@@ -70,7 +73,7 @@ export default function Home() {
               </Card>
             </Grid>
 
-            <Grid item xs={4}>
+            <Grid item xs={3}>
               <Button color="primary" variant="outlined">
                 <Typography >
                   посмотреть коллекцию
@@ -82,9 +85,29 @@ export default function Home() {
 
         <Grid
           item
-          sx={{ width: '50%', height: '100%' }}
+          sx={{ height: '100%', position: 'relative' }}
+          md={6}
+          xs={12}
+          className="main-left"
         >
-
+          <CardMedia
+            className="image-absolute"
+            title="Name"
+            component="img"
+            image="/images/pexels-marko-klaric-6408285.jpg"
+          />
+          <CardMedia
+            title="Name"
+            component="img"
+            image="/images/pexels-darina-belonogova-8722181.jpg"
+          />
+          <div>
+            <span className="line"></span>
+            <Typography>
+              Эксклюзивные товары с широким ассортиментом изделий и аксуссуаров
+              созданные своими руками только для Вас
+            </Typography>
+          </div>
         </Grid>
       </Grid>
     </Layout>
