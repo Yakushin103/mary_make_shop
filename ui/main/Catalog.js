@@ -30,7 +30,7 @@ export default function Catalog() {
         </Card>
       </Grid>
 
-      <Grid className="main-catalog" item xs={12} md={5}>
+      <Grid className="main-catalog right" item xs={12} md={5}>
         <Card className="main-catalog-card">
           <CardMedia
             component="img"

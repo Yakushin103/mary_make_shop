@@ -17,6 +17,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
 import UseSwitchesCustom from './UseSwitchesCustom'
+import HideOnScroll from './HideOnScroll'
 
 import { pages } from '../utils/constants'
 
@@ -75,7 +76,8 @@ export default function Layout({ title, description, children }) {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <AppBar sx={{ backgroundColor: darkMode ? 'black' : 'white' }} position="static">
+        <HideOnScroll>
+        <AppBar sx={{ backgroundColor: darkMode ? 'black' : 'white' }}>
           <Container maxWidth="xl">
             <Toolbar disableGutters>
 
@@ -144,7 +146,7 @@ export default function Layout({ title, description, children }) {
                         aria-controls="menu-appbar"
                         aria-haspopup="true"
                         onClick={handleOpenNavMenu}
-                        color="inherit"
+                        color="primary"
                       >
                         <MenuIcon />
                       </IconButton>
@@ -226,6 +228,7 @@ export default function Layout({ title, description, children }) {
             </Toolbar>
           </Container>
         </AppBar>
+        </ HideOnScroll>
 
         <Container>
           {children}

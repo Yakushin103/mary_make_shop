@@ -17,6 +17,7 @@ a {
 
 .main {
   height: 80vh;
+  margin-top: 4rem;
 }
 
 .main-right {
@@ -76,6 +77,10 @@ a {
   box-shadow: none;
 }
 
+.main-catalog.right {
+  margin: 4rem 0 2rem 0;
+}
+
 .main-catalog img {
   max-height: 400px;
   object-fit: contain;
@@ -97,5 +102,9 @@ a {
 
   .main-right img {
     height: 100px;
+  }
+
+  .main-catalog.right {
+    margin: 0 0 1rem 0;
   }
 }

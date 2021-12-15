@@ -10,6 +10,7 @@ import CardContent from '@mui/material/CardContent'
 import Button from '@mui/material/Button'
 import Layout from '../components/Layout'
 import Catalog from '../ui/main/Catalog'
+import Collection from '../ui/main/Collection'
 
 export default function Home() {
   return (
@@ -113,6 +114,8 @@ export default function Home() {
       </Grid>
 
       <Catalog />
+
+      <Collection />
     </Layout>
   )
 }
