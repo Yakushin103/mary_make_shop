@@ -9,6 +9,7 @@ import CardActionArea from '@mui/material/CardActionArea'
 import CardContent from '@mui/material/CardContent'
 import Button from '@mui/material/Button'
 import Layout from '../components/Layout'
+import Catalog from '../ui/main/Catalog'
 
 export default function Home() {
   return (
@@ -33,7 +34,7 @@ export default function Home() {
           </Typography>
 
           <Grid sx={{ margin: '2rem 0' }} justifyContent='space-between' container>
-            <Grid item xs={3}>
+            <Grid item xs={3} md={3}>
               <Card>
                 <NextLink href={`/product/1`} passHref>
                   <CardActionArea>
@@ -53,7 +54,7 @@ export default function Home() {
               </Card>
             </Grid>
 
-            <Grid item xs={3}>
+            <Grid item xs={3} md={3}>
               <Card>
                 <NextLink href={`/product/1`} passHref>
                   <CardActionArea>
@@ -73,7 +74,7 @@ export default function Home() {
               </Card>
             </Grid>
 
-            <Grid item xs={3}>
+            <Grid item xs={3} md={3}>
               <Button color="primary" variant="outlined">
                 <Typography >
                   посмотреть коллекцию
@@ -110,6 +111,8 @@ export default function Home() {
           </div>
         </Grid>
       </Grid>
+
+      <Catalog />
     </Layout>
   )
 }

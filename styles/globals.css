@@ -65,3 +65,37 @@ a {
   border-radius: 1rem;
   z-index: 1;
 }
+
+.main-catalog-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.main-catalog img {
+  max-height: 400px;
+  object-fit: contain;
+  z-index: 999;
+}
+
+@media (max-width: 900px) {
+  .main {
+    height: auto;
+  }
+
+  h2 {
+    font-size: 2rem!important;
+  }
+
+  p {
+    font-size: 10px!important;
+  }
+
+  .main-right img {
+    height: 100px;
+  }
+}

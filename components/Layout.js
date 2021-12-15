@@ -32,7 +32,7 @@ export default function Layout({ title, description, children }) {
         margin: '1rem 0'
       },
       h2: {
-        fontSize: '4rem',
+        fontSize: '3.5rem',
         margin: '1rem 0'
       },
       body1: {
